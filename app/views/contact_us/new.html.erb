@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact V17</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<%= form_for(:contact_detail, url: contact_us_path, method: :post, html: {class: 'contact100-form validate-form'}) do |f| %>
+				<span class="contact100-form-title">
+          <%= I18n.t('contact_form.title')%>
+				</span>
+
+				<label class="label-input100" for="first-name"><%= I18n.t('contact_form.name_title')%> *</label>
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
+					<%= f.text_field :first_name, class: 'input100', placeholder: "#{I18n.t('contact_form.first_name')}", required: true %>
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Type last name">
+					<%= f.text_field :last_name, class: 'input100', placeholder: "#{I18n.t('contact_form.last_name')}", required: true %>
+					<span class="focus-input100"></span>
+				</div>
+
+				<label class="label-input100" for="email"><%= I18n.t('contact_form.email_title')%> *</label>
+				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<%= f.email_field :email, class: 'input100', placeholder: "#{I18n.t('contact_form.email_placeholder')}", required: true %>
+					<span class="focus-input100"></span>
+				</div>
+
+				<label class="label-input100" for="phone"><%= I18n.t('contact_form.phone_title')%></label>
+				<div class="wrap-input100">
+					<%= f.text_field :phone, class: 'input100', placeholder: "#{I18n.t('contact_form.phone_placeholder')}", required: true %>
+					<span class="focus-input100"></span>
+				</div>
+
+				<label class="label-input100" for="message"><%= I18n.t('contact_form.message_title')%> *</label>
+				<div class="wrap-input100 validate-input" data-validate = "Message is required">
+					<%= f.text_area :message_content, class: 'input100', placeholder: "#{I18n.t('contact_form.message')}", required: true %>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<%= f.submit "#{I18n.t('contact_form.send_message')}", class: 'contact100-form-btn' %>
+				</div>
+      <%end%>
+
+			<div class="contact100-more flex-col-c-m" style="background-image: url('/assets/bg-01.jpg');">
+				<div class="flex-w size1 p-b-47">
+					<div class="txt1 p-r-25">
+						<span class="lnr lnr-map-marker"></span>
+					</div>
+
+					<div class="flex-col size2">
+						<span class="txt1 p-b-20">
+							<%= I18n.t('contact_form.address')%>
+						</span>
+
+						<span class="txt2">
+							Mada Center 8th floor, 379 Hudson St, New York, NY 10018 US
+						</span>
+					</div>
+				</div>
+
+				<div class="dis-flex size1 p-b-47">
+					<div class="txt1 p-r-25">
+						<span class="lnr lnr-phone-handset"></span>
+					</div>
+
+					<div class="flex-col size2">
+						<span class="txt1 p-b-20">
+							<%= I18n.t('contact_form.lets_talk')%>
+						</span>
+
+						<span class="txt3">
+							+1 800 1236879
+						</span>
+					</div>
+				</div>
+
+				<div class="dis-flex size1 p-b-47">
+					<div class="txt1 p-r-25">
+						<span class="lnr lnr-envelope"></span>
+					</div>
+
+					<div class="flex-col size2">
+						<span class="txt1 p-b-20">
+							<%= I18n.t('contact_form.general_support')%>
+						</span>
+
+						<span class="txt3">
+							contact@example.com
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

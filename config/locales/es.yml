@@ -1,0 +1,22 @@
+es:
+  contact_form:
+    title: Mandanos un mensaje
+    name_title: Dinos tu nombre
+    first_name: Nombre de pila
+    last_name: Apellido
+    email_title: Introduce tu correo electrónico
+    email: Correo electrónico
+    email_placeholder: P.ej. ejemplo@email.com
+    phone_title: Introduzca el número de teléfono
+    phone: Teléfono
+    phone_placeholder: P.ej. +1 800 000000
+    message_title: Mensaje
+    message: Escríbenos un mensaje
+    address: ladirección
+    lets_talk: Hablemos
+    general_support: Apoyo general
+    send_message: Enviar mensaje
+response:
+  success: Mensaje enviado exitosamente.
+mailer:
+  subject: Notificador de correo electrónico de contacto

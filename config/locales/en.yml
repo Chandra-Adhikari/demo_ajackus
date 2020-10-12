@@ -1,0 +1,22 @@
+en:
+  contact_form:
+    title: Send Us A Message
+    name_title: Tell us your name
+    first_name: First Name
+    last_name: Last Name
+    email_title: Enter your email
+    email: Email
+    email_placeholder: Eg. example@email.com
+    phone_title: Enter phone number
+    phone: Phone
+    phone_placeholder: Eg. +1 800 000000
+    message_title: Message
+    message: Write us a message
+    address: Address
+    lets_talk: Lets Talk
+    general_support: General Support
+    send_message: Send Message
+  response:
+    success: Message send successfully.
+  mailer:
+    subject: ContactUs Email Notifier

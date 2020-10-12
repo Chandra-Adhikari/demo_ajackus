@@ -1,0 +1,22 @@
+de:
+  contact_form:
+    title: Schick uns eine Nachricht
+    name_title: Sagen Sie uns Ihren Namen
+    first_name: Vorname
+    last_name: Nachname
+    email_title: Geben sie ihre E-Mail Adresse ein
+    email: Email
+    email_placeholder: Z.B. example@email.com
+    phone_title: Telefonnummer eingeben
+    phone: Telefon
+    phone_placeholder: Z.B. +1 800 000000
+    message_title: Botschaft
+    message: Schreiben Sie uns eine Nachricht
+    address: Adresse
+    lets_talk: Lass uns reden
+    general_support: Allgemeine Unterstützung
+    send_message: Nachricht senden
+  response:
+    success: Nachricht erfolgreich gesendet.
+  mailer:
+    subject: ContactUs Email Notifier
