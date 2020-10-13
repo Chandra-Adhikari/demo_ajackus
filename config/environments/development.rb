@@ -59,7 +59,7 @@ Rails.application.configure do
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.perform_caching = false
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.action_mailer.default_url_options = ENV['default_host']
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     address: "smtp.gmail.com",
@@ -68,7 +68,7 @@ Rails.application.configure do
     enable_starttls_auto: true,
     user_name: ENV['user_name'],
     password: ENV['password'],
-    domain: "smtp.gmail.com",
+    domain: ENV['mailer_domain'],
     openssl_verify_mode: "none",
   }
   # Use an evented file watcher to asynchronously detect changes in source code,
