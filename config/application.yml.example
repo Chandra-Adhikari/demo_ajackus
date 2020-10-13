@@ -1,0 +1,4 @@
+default_host: 'localhost:3000'
+mailer_domain: 'smtp.gmail.com'
+user_name: 'your email'
+password: 'your password'

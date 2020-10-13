@@ -8,16 +8,14 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
-// require("packs/vendor/main")
 require("packs/vendor/bootstrap.min")
 require("packs/vendor/jquery-3.2.1.min")
-// require("packs/vendor/moment.min")
 require("packs/vendor/popper.min")
 
 // Uncomment to copy all static ima
-import 'css/main.css'
 import 'css/bootstrap.min.css'
 import 'css/util.css'
+import 'css/main.css'
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
 // or the `imagePath` JavaScript helper below.

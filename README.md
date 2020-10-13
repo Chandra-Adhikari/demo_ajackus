@@ -15,3 +15,9 @@ Things you may want to cover:
 
 * Database creation:
   * rake db:create db:migrate db:seed
+
+* Setup application.yml
+  You need to configure config/application.yml, before running rails server.
+  Run following commands to change the specified files:
+
+  mv config/application.yml.example config/application.yml
