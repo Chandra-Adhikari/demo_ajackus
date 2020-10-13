@@ -16,13 +16,13 @@ es:
     lets_talk: Hablemos
     general_support: Apoyo general
     send_message: Enviar mensaje
-response:
-  success: Mensaje enviado exitosamente.
-mailer:
-  subject: Notificador de correo electrónico de contacto
-  copyright: '2020 © Demo. Todos los derechos reservados.'
-  email: Correo electrónico
-  Nombre: Name
-  phone: Teléfono
-  message: Mensaje
-  hi: Hola Admin
+  response:
+    success: Mensaje enviado exitosamente.
+  mailer:
+    subject: Notificador de correo electrónico de contacto
+    copyright: '2020 © Demo. Todos los derechos reservados.'
+    email: Correo electrónico
+    name: Nombre
+    phone: Teléfono
+    message: Mensaje
+    hi: Hola Admin
