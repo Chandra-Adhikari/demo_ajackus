@@ -20,3 +20,9 @@ de:
     success: Nachricht erfolgreich gesendet.
   mailer:
     subject: ContactUs Email Notifier
+    copyright: '2020 © Demo. Alle Rechte vorbehalten.'
+    email: Email
+    name: Name
+    phone: Telefon
+    message: Botschaft
+    hi: Hallo Admin

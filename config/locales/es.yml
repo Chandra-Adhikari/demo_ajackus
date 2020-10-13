@@ -20,3 +20,9 @@ response:
   success: Mensaje enviado exitosamente.
 mailer:
   subject: Notificador de correo electrónico de contacto
+  copyright: '2020 © Demo. Todos los derechos reservados.'
+  email: Correo electrónico
+  Nombre: Name
+  phone: Teléfono
+  message: Mensaje
+  hi: Hola Admin

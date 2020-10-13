@@ -85,12 +85,12 @@ Licensed under MIT
 	    <font face="Arial, Helvetica, sans-serif" size="4" color="#57697e" style="font-size: 15px;">
 		<table width="90%" border="0" cellspacing="0" cellpadding="0">
 			<tr><td>
-			    Hey Admin,<br/>
+			    <%= I18n.t('mailer.hi')%>,<br/>
 			    <%= @user.full_name %> requested for contact us. Here are your details:<br/>
-			    Name: <%= @user.full_name %><br/>
-			    Email: <%= @user.email %><br/>
-          phone: <%= @user.phone %><br/>
-          Message: <%= @user.message_content %><br/>
+			    <%= I18n.t('mailer.name')%>: <%= @user.full_name %><br/>
+			    <%= I18n.t('mailer.email')%>: <%= @user.email %><br/>
+          <%= I18n.t('mailer.phone')%>: <%= @user.phone %><br/>
+          <%= I18n.t('mailer.message')%>: <%= @user.message_content %><br/>
 			</td></tr>
 		</table>
 		</font>
@@ -106,7 +106,7 @@ Licensed under MIT
 			<tr><td align="center" style="padding:20px;flaot:left;width:100%; text-align:center;">
 				<font face="Arial, Helvetica, sans-serif" size="3" color="#96a5b5" style="font-size: 13px;">
 				<span style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #96a5b5;">
-					2020 © Demo. ALL Rights Reserved.
+          <%= I18n.t('mailer.copyright')%>
 				</span></font>
 			</td></tr>
 		</table>
