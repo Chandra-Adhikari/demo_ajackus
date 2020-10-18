@@ -21,3 +21,7 @@ Things you may want to cover:
   Run following commands to change the specified files:
 
   mv config/application.yml.example config/application.yml
+
+* setup specs for test cases and check code coverage
+
+	bundle exec rspec
